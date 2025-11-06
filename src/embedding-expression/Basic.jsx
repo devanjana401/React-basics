@@ -1,4 +1,6 @@
 import React from 'react'
+import './basic.css';
+
 
 const Basic = () => {
     const name = 'Anjana';
