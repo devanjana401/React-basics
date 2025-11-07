@@ -27,6 +27,8 @@ import React, { Component } from 'react'
 import BasicClass from './class-components/BasicClass'
 import State from './class-components/State'
 import Mount from './class-components/life-cycle-methods/Mount'
+import Props from './class-components/Props'
+import RenderingList from './embedding-expression/RenderingList'
 
 export default class App extends Component {
   render() {
@@ -34,7 +36,9 @@ export default class App extends Component {
       <>
         {/* <BasicClass/> */}
         {/* <State/> */}
-        <Mount/>
+        {/* <Mount/> */}
+        {/* <Props name="Anjana" course="Software development"/> */}
+        <RenderingList/>
       </>
     )
   }
