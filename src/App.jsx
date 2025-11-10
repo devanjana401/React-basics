@@ -1,8 +1,13 @@
 
 import './App.css'
-import BasicFc from './assets/functional-components/BasicFc'
-import Props_Fc from './assets/functional-components/Props_Fc'
-import State from './assets/functional-components/state'
+import Home from './assets/functional-components/hooks/use-context/theme-settings/Home'
+import { ThemeProvider } from './assets/functional-components/hooks/use-context/theme-settings/ThemeContext'
+import UseEff from './assets/functional-components/hooks/use-effect/UseEff'
+import UserList from './assets/functional-components/hooks/use-effect/UserList'
+import Counter from './assets/functional-components/hooks/use-state/Counter'
+// import BasicFc from './assets/functional-components/BasicFc'
+// import Props_Fc from './assets/functional-components/Props_Fc'
+// import State from './assets/functional-components/state'
 // import Basic from './embedding-expression/basic'
 // import CallingFunction from './embedding-expression/CallingFunction'
 // import Conditional from './embedding-expression/Conditional'
@@ -23,7 +28,13 @@ function App() {
       {/* -------functional components------- */}
       {/* <BasicFc/> */}
       {/* <State/> */}
-      <Props_Fc/>
+      {/* <Props_Fc/> */}
+      {/* <Counter/> */}
+      {/* <UseEff/> */}
+      {/* <UserList/> */}
+      <ThemeProvider>
+        <Home/>
+      </ThemeProvider>
     </>
   )
 }
@@ -40,6 +51,7 @@ export default App
 // import RenderingList from './embedding-expression/RenderingList'
 // import Updating from './class-components/life-cycle-methods/Updating'
 // import UnMount from './class-components/life-cycle-methods/UnMount'
+// import Should from './class-components/life-cycle-methods/should'
 
 // export default class App extends Component {
 //   render() {
@@ -50,7 +62,8 @@ export default App
 //         {/* <Mount/> */}
 //         {/* <Props name="Anjana" course="Software development"/> */}
 //         {/* <Updating/> */}
-//         <UnMount/>
+//         {/* <UnMount/> */}
+//         {/* <Should/> */}
 //       </>
 //     )
 //   }
