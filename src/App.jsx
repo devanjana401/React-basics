@@ -2,6 +2,8 @@
 import './App.css'
 import Home from './assets/functional-components/hooks/use-context/theme-settings/Home'
 import { ThemeProvider } from './assets/functional-components/hooks/use-context/theme-settings/ThemeContext'
+import Profile from './assets/functional-components/hooks/use-context/user-list/Profile'
+import { UserProvider } from './assets/functional-components/hooks/use-context/user-list/UserContext'
 import UseEff from './assets/functional-components/hooks/use-effect/UseEff'
 import UserList from './assets/functional-components/hooks/use-effect/UserList'
 import Counter from './assets/functional-components/hooks/use-state/Counter'
@@ -32,9 +34,18 @@ function App() {
       {/* <Counter/> */}
       {/* <UseEff/> */}
       {/* <UserList/> */}
-      <ThemeProvider>
+
+      {/* ----useContext---- */}
+
+      {/* --Example 1-- */}
+      {/* <ThemeProvider>
         <Home/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      {/* --Example 2-- */}
+      <UserProvider>
+        <Profile/>
+      </UserProvider>
     </>
   )
 }
