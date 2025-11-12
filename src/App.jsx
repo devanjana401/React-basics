@@ -1,12 +1,15 @@
 
+import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './assets/functional-components/hooks/use-context/theme-settings/Home'
+// import Home from './assets/functional-components/hooks/use-context/theme-settings/Home'
 import { ThemeProvider } from './assets/functional-components/hooks/use-context/theme-settings/ThemeContext'
 import Profile from './assets/functional-components/hooks/use-context/user-list/Profile'
 import { UserProvider } from './assets/functional-components/hooks/use-context/user-list/UserContext'
 import UseEff from './assets/functional-components/hooks/use-effect/UseEff'
 import UserList from './assets/functional-components/hooks/use-effect/UserList'
 import Counter from './assets/functional-components/hooks/use-state/Counter'
+import Home from './react-outer-dom/Home'
+import About from './react-outer-dom/About'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -17,7 +20,6 @@ import Counter from './assets/functional-components/hooks/use-state/Counter'
 
 function App() {
   
-
   return (
     <>
       {/* -----embedding expresiion----- */}
@@ -43,9 +45,24 @@ function App() {
       </ThemeProvider> */}
 
       {/* --Example 2-- */}
-      <UserProvider>
+      {/* <UserProvider>
         <Profile/>
-      </UserProvider>
+      </UserProvider> */}
+
+
+      {/* ----react router dom---- */}
+      <div>
+        <nav>
+          <Link to='/'>Home</Link>                {/* it used instead of <a> tag used in html */}
+          <Link to='/about'>About</Link>
+        </nav>
+
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+        </Routes>
+
+      </div>
     </>
   )
 }
