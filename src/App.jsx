@@ -1,3 +1,4 @@
+// ..........functional components........
 
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
@@ -10,6 +11,8 @@ import UserList from './assets/functional-components/hooks/use-effect/UserList'
 import Counter from './assets/functional-components/hooks/use-state/Counter'
 import Home from './react-outer-dom/Home'
 import About from './react-outer-dom/About'
+import Product from './dynamic-routing/Product'
+import ProductDetails from './dynamic-routing/ProductDetails'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -51,9 +54,9 @@ function App() {
 
 
       {/* ----react router dom---- */}
-      <div>
+      {/* <div>
         <nav>
-          <Link to='/'>Home</Link>                {/* it used instead of <a> tag used in html */}
+          <Link to='/'>Home</Link>                //it used instead of <a> tag used in html
           <Link to='/about'>About</Link>
         </nav>
 
@@ -62,10 +65,18 @@ function App() {
           <Route path='/about' element={<About/>}/>
         </Routes>
 
-      </div>
+      </div> */}
+
+      {/* ----react dynamic router dom---- */}
+      {/* <Product/> */}
+      <Routes>
+        <Route path='/' element={<Product/>}/>
+        <Route path='/products/:id' element={<ProductDetails/>}/>
+      </Routes>
     </>
   )
 }
+
 
 export default App
 
