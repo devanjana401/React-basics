@@ -13,6 +13,7 @@ import Home from './react-outer-dom/Home'
 import About from './react-outer-dom/About'
 import Product from './dynamic-routing/Product'
 import ProductDetails from './dynamic-routing/ProductDetails'
+import ProductPage from './dynamic-routing/example/ProductPage'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -69,10 +70,13 @@ function App() {
 
       {/* ----react dynamic router dom---- */}
       {/* <Product/> */}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Product/>}/>
         <Route path='/products/:id' element={<ProductDetails/>}/>
-      </Routes>
+      </Routes> */}
+
+      {/* ----dynamic router dom example---- */}
+      <ProductPage/>
     </>
   )
 }
