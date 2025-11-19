@@ -5,8 +5,8 @@ const ProductCard = ({products}) => {
   return (
     <div className='product-card'>
       {products.offer && <span className='offer-badge'>{products.offer}% OFF</span>}
-      <div className='product-image-area' style={{width:'200px',height:'200px',translate}}>
-        <img src={products.image}alt="" />
+      <div className='product-image-area'>
+        <img src={products.image}alt="" style={{width:'400px',height:'320px'}} />
       </div>
       <p className='product-category'>{products.category}</p>
       <h3 className='product-title'>{products.title}</h3>

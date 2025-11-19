@@ -12,7 +12,7 @@ import Counter from './assets/functional-components/hooks/use-state/Counter'
 import Home from './react-outer-dom/Home'
 import About from './react-outer-dom/About'
 import Product from './dynamic-routing/Product'
-import ProductDetails from './dynamic-routing/ProductDetails'
+import ProductDetails from './dynamic-routing/example/ProductDetails'
 import ProductPage from './dynamic-routing/example/ProductPage'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
@@ -23,7 +23,7 @@ import ProductPage from './dynamic-routing/example/ProductPage'
 // import Sum from './embedding-expression/Sum'
 
 function App() {
-  
+
   return (
     <>
       {/* -----embedding expresiion----- */}
@@ -76,7 +76,11 @@ function App() {
       </Routes> */}
 
       {/* ----dynamic router dom example---- */}
-      <ProductPage/>
+      {/* <ProductPage/> */}
+      <Routes>
+        <Route path='/' element={<ProductPage />} />
+        <Route path='/product/:id' element={<ProductDetails />} />
+      </Routes>
     </>
   )
 }
