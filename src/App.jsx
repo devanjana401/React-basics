@@ -9,11 +9,15 @@ import { UserProvider } from './assets/functional-components/hooks/use-context/u
 import UseEff from './assets/functional-components/hooks/use-effect/UseEff'
 import UserList from './assets/functional-components/hooks/use-effect/UserList'
 import Counter from './assets/functional-components/hooks/use-state/Counter'
-import Home from './react-outer-dom/Home'
-import About from './react-outer-dom/About'
+// import Home from './react-outer-dom/Home'
+// import About from './react-outer-dom/About'
 import Product from './dynamic-routing/Product'
 import ProductDetails from './dynamic-routing/example/ProductDetails'
 import ProductPage from './dynamic-routing/example/ProductPage'
+import Navbar from './dynamic-routing/nested-routing/navbar'
+import Home from './dynamic-routing/nested-routing/pages/Home'
+import About from './dynamic-routing/nested-routing/pages/About'
+import Service from './dynamic-routing/nested-routing/pages/Service'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -77,9 +81,21 @@ function App() {
 
       {/* ----dynamic router dom example---- */}
       {/* <ProductPage/> */}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<ProductPage />} />
         <Route path='/product/:id' element={<ProductDetails />} />
+      </Routes> */}
+
+
+      {/* ----------nested - routing---------- */}
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+
+        {/* nested route starts here */}
+        <Route path='/services' element={<Service/>}/>
+
       </Routes>
     </>
   )

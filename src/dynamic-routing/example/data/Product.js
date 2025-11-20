@@ -5,7 +5,7 @@ import gallery4 from '../images/gallery4.jpg';
 
 export const products = [
     {
-        id:3,
+        id:1,
         image:gallery3,
         title:"Yoga Pose 3",
         category:'intermediate',
@@ -17,7 +17,7 @@ export const products = [
         gallery:[gallery1,gallery2,gallery3,gallery4]
     },
     {
-        id:4,
+        id:2,
         image:gallery4,
         title:"Yoga Pose 4",
         category:'advanced',
