@@ -1,7 +1,7 @@
 import React from 'react'
 import './service.css'
 import { MdMiscellaneousServices } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 
 const Service = () => {
@@ -20,6 +20,7 @@ const Service = () => {
         Design
         </Link>
       </div>
+      <Outlet/>
     </div>
   )
 }

@@ -18,6 +18,11 @@ import Navbar from './dynamic-routing/nested-routing/navbar'
 import Home from './dynamic-routing/nested-routing/pages/Home'
 import About from './dynamic-routing/nested-routing/pages/About'
 import Service from './dynamic-routing/nested-routing/pages/Service'
+import WebDev from './dynamic-routing/nested-routing/pages/services/WebDev'
+import AppDev from './dynamic-routing/nested-routing/pages/services/AppDev'
+import Design from './dynamic-routing/nested-routing/pages/services/Design'
+import Key from './react-keys/Key'
+import RealWorld from './react-keys/RealWorld'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -88,19 +93,30 @@ function App() {
 
 
       {/* ----------nested - routing---------- */}
-      <Navbar/>
+      {/* <Navbar/>
       <Routes>
+
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
 
-        {/* nested route starts here */}
-        <Route path='/services' element={<Service/>}/>
+        nested route starts here
+        <Route path='/services' element={<Service/>}>
+          <Route path='web-dev' element={<WebDev/>}/>
+          <Route path='app-dev' element={<AppDev/>}/>
+          <Route path='design-dev' element={<Design/>}/>
+        </Route>
 
-      </Routes>
+      </Routes> */}
+
+
+      {/*------ react-keys ------ */}
+
+      {/* <Key/> */}
+      <RealWorld/>
+      
     </>
   )
 }
-
 
 export default App
 
