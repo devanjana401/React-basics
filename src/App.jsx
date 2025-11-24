@@ -23,6 +23,8 @@ import AppDev from './dynamic-routing/nested-routing/pages/services/AppDev'
 import Design from './dynamic-routing/nested-routing/pages/services/Design'
 import Key from './react-keys/Key'
 import RealWorld from './react-keys/RealWorld'
+import BasicForm from './form-validation/BasicForm'
+import NormalForm from './form-validation/NormalForm'
 // import BasicFc from './assets/functional-components/BasicFc'
 // import Props_Fc from './assets/functional-components/Props_Fc'
 // import State from './assets/functional-components/state'
@@ -112,8 +114,11 @@ function App() {
       {/*------ react-keys ------ */}
 
       {/* <Key/> */}
-      <RealWorld/>
+      {/* <RealWorld/> */}
       
+      {/* form validation */}
+      {/* <BasicForm/> */}
+      <NormalForm/>
     </>
   )
 }
