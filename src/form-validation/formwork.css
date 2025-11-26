@@ -1,0 +1,39 @@
+.form-container {
+    width: 400px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #ffe6e6;
+    color: #d8000c;
+    border-left: 4px solid #d8000c;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 8px 0 12px 0;
+    display: block;
+}
+

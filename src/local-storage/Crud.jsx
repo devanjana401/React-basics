@@ -104,6 +104,11 @@ const Crud = () => {
         setErrors({});
     }
 
+    const handleClear = () => {
+    setUsers([]);        // remove all users in state
+    localStorage.removeItem("users"); // optional: clear from localStorage
+};
+
     return (
         <div className='formnew'>
             <h1>Simple CRUD</h1>
@@ -155,6 +160,7 @@ const Crud = () => {
                 {/* clear button  */}
                 {users.length>0 && (
                     <button 
+                        onClick={handleClear}
                         style={{backgroundColor:'red',color:'white',border:'none',padding:'8px 12px',borderRadius:'4px',cursor:'pointer',marginLeft:'30px'}}>
                         Clear All Data
                     </button>
