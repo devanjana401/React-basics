@@ -2,9 +2,13 @@
 
 // import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
+import AxiosDelete from './axios/AxiosDelete'
+import AxiosGet from './axios/AxiosGet'
+import AxiosPost from './axios/AxiosPost'
+import AxiosPut from './axios/AxiosPut'
 // import FormWork from './form-validation/FormWork'
 // import NormalForm from './form-validation/NormalForm'
-import Crud from './local-storage/Crud'
+// import Crud from './local-storage/Crud'
 // import Home from './assets/functional-components/hooks/use-context/theme-settings/Home'
 // import { ThemeProvider } from './assets/functional-components/hooks/use-context/theme-settings/ThemeContext'
 // import Profile from './assets/functional-components/hooks/use-context/user-list/Profile'
@@ -88,7 +92,8 @@ function App() {
         <Route path='/products/:id' element={<ProductDetails/>}/>
       </Routes> */}
 
-      {/* ----dynamic router dom example---- */}
+      {/* --------dynamic router dom example------- */}
+
       {/* <ProductPage/> */}
       {/* <Routes>
         <Route path='/' element={<ProductPage />} />
@@ -113,7 +118,7 @@ function App() {
       </Routes> */}
 
 
-      {/*------ react-keys ------ */}
+      {/*--------- react-keys --------- */}
 
       {/* <Key/> */}
       {/* <RealWorld/> */}
@@ -121,8 +126,16 @@ function App() {
       {/* form validation */}
       {/* <BasicForm/> */}
       {/* <NormalForm/> */}
-      <Crud/>
       {/* <FormWork/> */}
+      {/* <Crud/> */}
+
+
+      {/* ----------axios----------- */}
+
+      {/* <AxiosGet/> */}
+      {/* <AxiosPost/> */}
+      {/* <AxiosPut/> */}
+      <AxiosDelete/>
     </>
   )
 }
