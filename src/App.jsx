@@ -2,10 +2,13 @@
 
 // import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import AxiosDelete from './axios/AxiosDelete'
-import AxiosGet from './axios/AxiosGet'
-import AxiosPost from './axios/AxiosPost'
-import AxiosPut from './axios/AxiosPut'
+import CartApp from './cart-components/CartApp'
+// import ShopCart from './use-reducer-component/ShopCart'
+// import CounterReducer from '../src/use-reducer-component/CounterReducer'
+// import AxiosDelete from './axios/AxiosDelete'
+// import AxiosGet from './axios/AxiosGet'
+// import AxiosPost from './axios/AxiosPost'
+// import AxiosPut from './axios/AxiosPut'
 // import FormWork from './form-validation/FormWork'
 // import NormalForm from './form-validation/NormalForm'
 // import Crud from './local-storage/Crud'
@@ -69,6 +72,14 @@ function App() {
       {/* <UserProvider>
         <Profile/>
       </UserProvider> */}
+
+      {/* useReducer */}
+      {/* <CounterReducer/> */}
+      {/* <ShopCart/> */}
+
+
+      {/* useContext + useReducer */}
+      <CartApp/>
 
 
       {/* ----react router dom---- */}
@@ -135,7 +146,8 @@ function App() {
       {/* <AxiosGet/> */}
       {/* <AxiosPost/> */}
       {/* <AxiosPut/> */}
-      <AxiosDelete/>
+      {/* <AxiosDelete/> */}
+
     </>
   )
 }
