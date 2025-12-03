@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProduct } from '../slices/productSlice';
+import { addToCart } from '../slices/cartSlice';
 
 function ProductList() {
     const dispatch = useDispatch();
@@ -29,7 +30,7 @@ function ProductList() {
                 <div>
                     <h5>{product.title}</h5>
                     <p>{product.price}</p>
-                    <button>
+                    <button onClick={() => dispatch(addToCart(product))}>
                         Add to Cart
                     </button>
                 </div>
