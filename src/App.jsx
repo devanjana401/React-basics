@@ -1,8 +1,12 @@
 // ..........functional components........
 
 // import { Link, Route, Routes } from 'react-router-dom'
+// import { Provider } from 'react-redux'
 import './App.css'
-import CartApp from './cart-components/CartApp'
+import ShopApp from './shopcart-with-redux/ShopApp'
+// import CounterApp from './store/CounterApp'
+// import { store } from './store/store'
+// import CartApp from './cart-components/CartApp'
 // import ShopCart from './use-reducer-component/ShopCart'
 // import CounterReducer from '../src/use-reducer-component/CounterReducer'
 // import AxiosDelete from './axios/AxiosDelete'
@@ -79,7 +83,7 @@ function App() {
 
 
       {/* useContext + useReducer */}
-      <CartApp/>
+      {/* <CartApp/> */}
 
 
       {/* ----react router dom---- */}
@@ -148,6 +152,16 @@ function App() {
       {/* <AxiosPut/> */}
       {/* <AxiosDelete/> */}
 
+
+      {/* --------------- redux ------------------- */}
+      
+      {/* Example 1 */}
+      {/* <Provider store={store}>
+        <CounterApp/>
+      </Provider> */}
+
+      {/* Example 2 */}
+      <ShopApp/>
     </>
   )
 }
