@@ -7,12 +7,14 @@ import Cart from './components/Cart'
 function ShopApp() {
   return (
     <Provider store={store}>
-      <h1>Shopping Cart</h1>
-      <div>
-        <ProductList/>
-      </div>
-      <div>
-        <Cart/>
+      <h1 style={{textAlign:'center',textDecoration:'underline'}}>Shopping Cart</h1>
+      <div style={{display:'flex',justifyContent:'center',gap:'200px'}}>
+        <div>
+          <ProductList/>
+        </div>
+        <div>
+          <Cart/>
+        </div>
       </div>
     </Provider>
   )

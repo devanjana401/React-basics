@@ -3,7 +3,8 @@
 // import { Link, Route, Routes } from 'react-router-dom'
 // import { Provider } from 'react-redux'
 import './App.css'
-import ShopApp from './shopcart-with-redux/ShopApp'
+import AuthApp from './auth_app/AuthApp'
+// import ShopApp from './shopcart-with-redux/ShopApp'
 // import CounterApp from './store/CounterApp'
 // import { store } from './store/store'
 // import CartApp from './cart-components/CartApp'
@@ -161,7 +162,9 @@ function App() {
       </Provider> */}
 
       {/* Example 2 */}
-      <ShopApp/>
+      {/* <ShopApp/> */}
+
+      <AuthApp/>
     </>
   )
 }
